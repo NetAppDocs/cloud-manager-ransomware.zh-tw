@@ -1,0 +1,16 @@
+---
+layout: astra 
+sidebar: sidebar 
+permalink: index.html 
+lead: The Ransomware Protection service enables you to view relevant information about cybersecurity and assess how resilient your data is to a cyber attack. 
+summary: 勒索軟體保護服務可讓您檢視網路安全的相關資訊、並評估資料對網路攻擊的恢復能力。 
+---
+= 勒索軟體保護文件
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+

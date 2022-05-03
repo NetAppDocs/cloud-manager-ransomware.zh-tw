@@ -1,0 +1,61 @@
+---
+settings:
+  name: Ransomware Protection
+  platform: cloud
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  langs: zh-tw,us-en,ja-jp,zh-cn,ko-kr
+sidebar:
+  entries:
+  - title: 所有Cloud Manager文件
+    url: https://docs.netapp.com/us-en/cloud-manager-family
+  - title: 勒索軟體保護文件
+    url: "/index.html"
+  - title: 版本資訊
+    url: "/whats-new.html"
+  - title: 開始使用
+    entries:
+    - title: 深入瞭解勒索軟體保護
+      url: "/concept-ransomware-protection.html"
+  - title: 使用勒索軟體保護
+    entries:
+    - title: 管理資料的網路安全建議
+      url: "/task-analyze-ransomware-data.html"
+  - title: 知識與支援
+    entries:
+    - title: 註冊以取得支援
+      url: "/task-support-registration.html"
+    - title: 取得協助
+      url: "/task-get-help.html"
+  - title: 法律聲明
+    url: "/legal-notices.html"
+homepage:
+  tiles:
+  - title: 開始使用
+    links:
+    - title: 深入瞭解勒索軟體保護
+      url: concept-ransomware-protection.html
+    - title: 新增功能
+      url: whats-new.html
+  - title: 管理網路安全建議
+    links:
+    - title: 依資料敏感度檢視最重要的資料儲存庫
+      url: task-analyze-ransomware-data.html#top-data-repositories-by-data-sensitivity
+    - title: 檢視已新增至網域系統管理員群組的使用者
+      url: task-analyze-ransomware-data.html#domain-administrator-group-control
+    - title: 檢視依開啟權限列出的資料
+      url: task-analyze-ransomware-data.html#data-listed-by-types-of-open-permissions
+    - title: 檢視以加密檔案列出的資料
+      url: task-analyze-ransomware-data.html#data-listed-by-encrypted-files
+  - title: 部落格社群
+    links:
+    - title: NetApp社群
+      url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS
+    - title: Cloud Central部落格
+      url: https://cloud.netapp.com/blog
+    - title: 雲端網路研討會
+      url: https://cloud.netapp.com/events
+product-family: {}

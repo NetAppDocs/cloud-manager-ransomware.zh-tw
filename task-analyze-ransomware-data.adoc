@@ -1,0 +1,127 @@
+---
+sidebar: sidebar 
+permalink: task-analyze-ransomware-data.html 
+keywords: personal data, personal information, sensitive, personal sensitive data, governance, data sense, ransomware, ransomware protection, cyberstorage, cyber attack, cybersecurity, permissions 
+summary: 使用勒索軟體保護儀表板檢視所有工作環境和資料來源的網路恢復能力總覽。您可以深入瞭解每個區域、以瞭解更多詳細資料和可能的修正。 
+---
+= 管理資料來源的網路安全建議
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+使用勒索軟體保護儀表板檢視所有工作環境和資料來源的網路恢復能力總覽。您可以深入瞭解每個區域、以瞭解更多詳細資料和可能的修正。
+
+image:screenshot_ransomware_dashboard.png["勒索軟體保護儀表板的快照。"]
+
+
+
+== 網路恢復地圖
+
+網路還原地圖是儀表板的主要區域。它可讓您以視覺化的方式查看所有工作環境和資料來源、並能檢視相關的網路恢復能力資訊。
+
+image:screenshot_ransomware_cyber_map.png["勒索軟體保護儀表板上的網路還原地圖快照。"]
+
+地圖由三個部分組成：
+
+左側面板:: 顯示服務正在監控所有資料來源的警示清單。也會指出您環境中每個作用中警示的數目。有大量一種警示類型、可能是嘗試先解決這些警示的好理由。
+中央面板:: 以圖形格式顯示所有資料來源、服務和Active Directory。健全的環境具有綠色指標、而具有警示的環境則有紅色指標。
+右側面板:: 按一下具有紅色指標的資料來源之後、此面板會顯示該資料來源的警示、並提供解決警示的建議。警示會排序、以便先列出最新的警示。許多建議都會引導您選擇另一項Cloud Manager服務、以便解決此問題。
+
+
+這些是目前追蹤的警示和建議的修正。
+
+[cols="33,33,33"]
+|===
+| 警示 | 說明 | 補救 
+
+
+| 偵測到高資料加密率 | 資料來源中加密檔案或毀損檔案的百分比發生異常增加。這表示在過去7天內、加密檔案的百分比增加超過20%。例如、如果50%的檔案已加密、則一天之後此數字會增加至60%、您會看到此警示。 | 按一下連結以啟動 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html["資料感應調查頁面"^]。您可以在其中選取特定_Working Environment_和_Category（加密和毀損）_的篩選器、以檢視所有加密和毀損檔案的清單。 
+
+
+| 找到具有廣泛權限的敏感資料 | 敏感資料位於檔案中、而資料來源的存取權限等級太高。 | 按一下連結以啟動 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html["資料感應調查頁面"^]。您可以在其中選取特定_Working Environment_、_Sensitivity Level（敏感個人）_和_Open權限_的篩選條件、以檢視發生此問題的檔案清單。 
+
+
+| 一或多個磁碟區未使用Cloud Backup備份 | 工作環境中的部分磁碟區未受到使用保護 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["雲端備份"^]。 | 按一下連結以啟動Cloud Backup、然後您可以識別工作環境中未備份的磁碟區、然後決定是否要在這些磁碟區上啟用備份。 
+
+
+| Data Sense不會掃描資料來源中的一或多個儲存庫（磁碟區、儲存區等） | 您的資料來源中有些資料並未使用進行掃描 https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["雲端資料感測"^] 找出法規遵循與隱私權方面的考量、並找出最佳化商機。 | 按一下連結以啟動「Data Sense（資料感測）」、並針對未掃描的項目啟用掃描與對應功能。 
+|===
+
+
+== 依資料敏感度排名第一的資料儲存庫
+
+「_依敏感度等級_排名前四的資料儲存庫」面板最多會列出包含最敏感項目的前四個資料儲存庫（工作環境和資料來源）。每個工作環境的長條圖分為：
+
+* 非敏感資料
+* 個人資料
+* 敏感的個人資料
+
+
+image:screenshot_ransomware_sensitivity.png["勒索軟體保護儀表板上的資料敏感度圖表快照。"]
+
+您可以將游標停留在每個區段上、查看每個類別中的項目總數。
+
+按一下每個區域、即可在「Data Sense Investigation」（資料感測調查）頁面中檢視篩選後的結果、以便進一步調查。
+
+
+
+== 網域管理員群組控制項
+
+「網域管理員群組」控制面板會顯示最近新增至網域系統管理員群組的使用者、以便您查看這些群組中是否允許所有使用者。您必須擁有 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-add-active-directory-datasense.html["整合全域Active Directory"^] 此面板可在Cloud Data感應中使用。
+
+image:screenshot_ransomware_domain_admin.png["已在勒索軟體保護儀表板上新增為網域管理員的使用者快照。"]
+
+預設的管理管理群組包括「系統管理員」、「網域管理員」、「企業系統管理員」、「企業金鑰管理員」及「金鑰管理員」。
+
+
+
+== 依開啟權限類型列出的資料
+
+「_開啟權限_」面板會顯示所有要掃描檔案的每種權限類型百分比。此圖表是以Data Sense提供、並顯示下列權限類型：
+
+* 無開放存取權
+* 開放給組織使用
+* 開放給大眾使用
+* 不明存取
+
+
+image:screenshot_ransomware_permissions.png["勒索軟體保護儀表板上加密檔案圖表的快照。"]
+
+您可以將游標停在每個區段上、查看每個類別中的檔案百分比和總數。
+
+按一下每個區域、即可在「Data Sense Investigation」（資料感測調查）頁面中檢視篩選後的結果、以便進一步調查。
+
+
+
+== 以加密檔案列出的資料
+
+「_加密檔案_」面板會顯示前4大資料來源、其檔案經過一段時間加密的百分比最高。這些項目通常是受密碼保護的項目。它會比較過去7天的加密速率、以查看哪些資料來源的資料增加率超過20%。增加此金額可能表示勒索軟體已經攻擊您的系統。
+
+image:screenshot_ransomware_encrypt_files.png["勒索軟體保護儀表板上加密檔案圖表的快照。"]
+
+按一下其中一個資料來源的一行、即可在「Data Sense Investigation」（資料感測調查）頁面中檢視篩選後的結果、以便進一步調查。
+
+
+
+== 關鍵業務資料的權限狀態
+
+「_業務關鍵資料權限分析_」面板會顯示資料的權限狀態、這對您的業務而言至關重要。如此一來、您就能快速評估保護業務關鍵資料的能力。
+
+image:screenshot_ransomware_critical_permissions.png["您在勒索軟體保護儀表板上所管理資料的權限狀態快照。"]
+
+此面板一開始沒有資料、因為資料只會在您選取所建立的Data Sense _Policies（資料感測_原則_）來檢視最重要的商業資料之後填入。瞭解如何操作 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#creating-custom-policies["使用Data Sense建立原則"^]。
+
+在此面板中新增最多2個原則之後、圖表會顯示符合原則條件之所有資料的權限分析。它會列出下列項目數量：
+
+* 開放給大眾使用：Data Sense認為公開的項目
+* 開放給組織權限：Data Sense認為對組織開放的項目
+* 無開放式權限：Data有意義的項目、將其視為無開放式權限
+* 未知權限：Data有意義視為未知權限的項目
+
+
+將游標移到圖表中的每個長條上、即可檢視每個類別中的結果數目。按一下長條圖、就會顯示「Data Sense Investigation」（資料感測調查）頁面、以便進一步調查哪些項目具有開啟權限、以及您是否應該調整檔案權限。

@@ -1,0 +1,45 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, ransomware protection' 
+summary: 瞭解勒索軟體保護的新功能。 
+---
+= 勒索軟體保護的新功能
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+瞭解勒索軟體保護的新功能。
+
+
+
+== 2022年3月15日
+
+
+
+=== 新的面板可追蹤業務關鍵資料的權限狀態
+
+新的「業務關鍵資料權限分析」面板會顯示資料的權限狀態、這對您的業務而言至關重要。如此一來、您就能快速評估保護業務關鍵資料的能力。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#status-of-permissions-on-your-critical-business-data["如需詳細資料、請前往此處"]。
+
+
+
+=== 「開放權限」區域現在包括OneDrive和SharePoint帳戶
+
+勒索軟體保護儀表板中的「開放權限」區域現在包含OneDrive帳戶和SharePoint帳戶中掃描檔案的權限。
+
+
+
+== 2022年2月9日
+
+
+
+=== 全新勒索軟體保護服務
+
+全新的勒索軟體保護服務可讓您檢視網路安全相關資訊、並評估資料對網路攻擊的恢復能力。它也提供警示與修正清單、讓您的資料更安全。
+
+https://docs.netapp.com/us-en/cloud-manager-ransomware/concept-ransomware-protection.html["深入瞭解這項新服務"]。
