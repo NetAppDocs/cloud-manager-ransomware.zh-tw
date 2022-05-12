@@ -9,14 +9,14 @@
   <meta property="og:title" content="深入瞭解勒索軟體保護 | NetApp Documentation" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/zh-tw/cloud-manager-ransomware/concept-ransomware-protection.html" />
-	<meta property="og:description" content="勒索軟體攻擊可能會耗費一定的時間、資源和商譽。勒索軟體保護服務可讓您檢視網路安全的相關資訊、並評估資料對網路攻擊的恢復能力。它也提供警示與修正清單、讓您的資料更安全。" />
+	<meta property="og:description" content="勒索軟體攻擊可能會耗費一定的時間、資源和商譽。勒索軟體保護服務可讓您檢視網路安全相關資訊、並評估貴組織對於網路攻擊的應變能力。它也提供警示與修正清單、讓您的資料更安全。" />
   <meta property="og:image" content="https://docs.netapp.com/zh-tw/cloud-manager-ransomware/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="勒索軟體攻擊可能會耗費一定的時間、資源和商譽。勒索軟體保護服務可讓您檢視網路安全的相關資訊、並評估資料對網路攻擊的恢復能力。它也提供警示與修正清單、讓您的資料更安全。">
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="勒索軟體攻擊可能會耗費一定的時間、資源和商譽。勒索軟體保護服務可讓您檢視網路安全相關資訊、並評估貴組織對於網路攻擊的應變能力。它也提供警示與修正清單、讓您的資料更安全。">
   <meta name="keywords" content=" artificial intelligence, personal data, personal information, sensitive, personal sensitive data, data sense, ransomware, ransomware protection, cyberstorage, cyber attack, cybersecurity"><!-- Icons -->
   <link rel="icon" href="/zh-tw/cloud-manager-ransomware/images/favicon.ico" type="image/x-icon">
 
@@ -587,7 +587,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 06:00:58 +0000">05/03/2022</time>
+    <time datetime="2022-05-12 13:01:14 +0000">05/12/2022</time>
     
   
 
@@ -597,7 +597,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>勒索軟體攻擊可能會耗費一定的時間、資源和商譽。勒索軟體保護服務可讓您檢視網路安全的相關資訊、並評估資料對網路攻擊的恢復能力。它也提供警示與修正清單、讓您的資料更安全。</p>
+<p>勒索軟體攻擊可能會耗費一定的時間、資源和商譽。勒索軟體保護服務可讓您檢視網路安全相關資訊、並評估貴組織對於網路攻擊的應變能力。它也提供警示與修正清單、讓您的資料更安全。</p>
 </div>
 <div class="paragraph">
 <p><a href="https://cloud.netapp.com/cyberstorage" target="_blank" rel="noopener">"瞭解勒索軟體保護的使用案例"</a>。</p>
@@ -625,10 +625,19 @@
 <div class="ulist">
 <ul>
 <li>
+<p>您工作環境中的磁碟區無法透過定期Snapshot複本來保護。</p>
+</li>
+<li>
 <p>您工作環境中的磁碟區無法透過使用建立備份至雲端來保護 <a href="https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html" target="_blank" rel="noopener">"雲端備份"</a>。</p>
 </li>
 <li>
 <p>您工作環境中的資料和資料來源並未使用進行掃描 <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html" target="_blank" rel="noopener">"雲端資料感測"</a> 找出法規遵循與隱私權方面的考量、並找出最佳化商機。</p>
+<div class="paragraph">
+<p>從勒索軟體保護的角度來看、這項功能也很重要、因為它能讓您更清楚瞭解重要（敏感、業務關鍵）資料的位置、確保您能將保護重點放在那裡。</p>
+</div>
+</li>
+<li>
+<p>您最重要的資料類別並未備份、以防萬一發生勒索軟體攻擊而需要恢復。</p>
 </li>
 <li>
 <p>在工作環境或資料來源中、加密檔案的百分比出現異常增加。</p>
@@ -641,6 +650,15 @@
 </li>
 <li>
 <p>使用者已新增至Active Directory網域管理員群組。</p>
+</li>
+<li>
+<p>叢集上的更新版本為舊版、應更新以提供最佳的保護與安全功能。ONTAP</p>
+</li>
+<li>
+<p>您的系統無法啟用隨裝即用的勒索軟體功能ONTAP 。</p>
+<div class="paragraph">
+<p>此功能可主動偵測及警告可能表示勒索軟體攻擊的異常活動。ONTAP</p>
+</div>
 </li>
 </ul>
 </div>
@@ -692,13 +710,16 @@
 <p>物件儲存（使用S3傳輸協定）</p>
 </li>
 <li>
-<p>資料庫</p>
+<p>資料庫（Amazon RDS、MongoDB、MySQL、Oracle、PostgreSQL、 SAP HANA、SQL Server）</p>
 </li>
 <li>
 <p>OneDrive 帳戶</p>
 </li>
 <li>
 <p>SharePoint帳戶</p>
+</li>
+<li>
+<p>Google雲端硬碟帳戶</p>
 </li>
 </ul>
 </div>
@@ -716,7 +737,7 @@
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>勒索軟體保護會從Cloud Data Sense、Cloud Backup及其他Cloud Manager資源收集資訊、以填入勒索軟體保護儀表板。</p>
+<p>勒索軟體保護會從您的儲存系統、Cloud Data Sense、Cloud Backup及其他Cloud Manager資源收集資訊、以填入勒索軟體保護儀表板。</p>
 </li>
 <li>
 <p>您可以使用勒索軟體保護儀表板來取得系統保護程度的總覽。</p>
@@ -755,16 +776,16 @@
               <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/terms-of-use/">legal-terms</a>
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">條款與條件</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/privacy-policy/">legal-privacy</a>
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">Privacy Policy</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/cookie-policy/">legal-cookies</a>
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie Policy</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a class="ot-sdk-show-settings">cookie-settings</a>
+              <a class="ot-sdk-show-settings">Cookie 設定</a>
             </li>
           </ul>
         </div>

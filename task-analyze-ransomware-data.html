@@ -587,7 +587,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 06:00:58 +0000">05/03/2022</time>
+    <time datetime="2022-05-12 13:01:14 +0000">05/12/2022</time>
     
   
 
@@ -668,6 +668,21 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">Data Sense不會掃描資料來源中的一或多個儲存庫（磁碟區、儲存區等）</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">您的資料來源中有些資料並未使用進行掃描 <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html" target="_blank" rel="noopener">"雲端資料感測"</a> 找出法規遵循與隱私權方面的考量、並找出最佳化商機。</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">按一下連結以啟動「Data Sense（資料感測）」、並針對未掃描的項目啟用掃描與對應功能。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">內建的勒索軟體並非適用於所有磁碟區</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">內部ONTAP 的某些Volume無法使用 <a href="https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html" target="_blank" rel="noopener">"NetApp反勒索軟體功能"</a> 已啟用。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">按一下連結、即可將您重新導向至 <a href="#Status of ONTAP systems hardening">強化ONTAP 您的「需求環境」面板</a> 以及問題所在的工作環境。您可以在這裡調查解決問題的最佳方式。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">不更新版本ONTAP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">安裝在叢集上的版本不符合所提供的建議ONTAP <a href="https://www.netapp.com/pdf.html?item=/media/10674-tr4569.pdf" target="_blank" rel="noopener">"《NetApp ONTAP 資訊系統安全強化指南》"</a>。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">按一下連結、即可將您重新導向至 <a href="#Status of ONTAP systems hardening">強化ONTAP 您的「需求環境」面板</a> 以及問題所在的工作環境。您可以在這裡調查解決問題的最佳方式。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">未針對所有磁碟區設定快照</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">工作環境中的部分磁碟區無法透過建立磁碟區快照來保護。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">按一下連結、即可將您重新導向至 <a href="#Status of ONTAP systems hardening">強化ONTAP 您的「需求環境」面板</a> 以及問題所在的工作環境。您可以在這裡調查解決問題的最佳方式。</p></td>
 </tr>
 </tbody>
 </table>
@@ -765,6 +780,57 @@
 </div>
 </div>
 <div class="sect1">
+<h2 id="鞏固不均系統的狀態ontap">鞏固不均系統的狀態ONTAP</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>「_Harden Your ONTAP SUREYSURITY」面板提供ONTAP 您的某些支援系統設定的狀態、可追蹤您的部署安全程度、並根據 <a href="https://www.netapp.com/pdf.html?item=/media/10674-tr4569.pdf" target="_blank" rel="noopener">"《NetApp ONTAP 資訊系統安全強化指南》"</a> 以及 <a href="https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html" target="_blank" rel="noopener">"介紹防勒索軟體功能ONTAP"</a> 主動偵測異常活動並提出警告。</p>
+</div>
+<div class="paragraph">
+<p>您可以檢閱建議、然後決定如何解決潛在問題。您可以依照步驟變更叢集上的設定、將變更延後至其他時間、或忽略建議。</p>
+</div>
+<div class="paragraph">
+<p>此面板ONTAP 目前支援Cloud Volumes ONTAP 內部的NetApp ONTAP 支援功能、包括內部的功能、功能、功能、以及Amazon FSX for NetApp等系統。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_ransomware_harden_ontap.png" alt="勒索軟體保護儀表板上有關強化功能狀態的快照ONTAP 。"></span></p>
+</div>
+<div class="paragraph">
+<p>正在追蹤的設定包括：</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">強化目標</th>
+<th class="tableblock halign-left valign-top">說明</th>
+<th class="tableblock halign-left valign-top">補救</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">不勒索軟體ONTAP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">啟動內建勒索軟體的磁碟區百分比。僅對內部ONTAP 的供應系統有效。綠色狀態圖示表示已啟用超過85%的磁碟區。黃色表示啟用40-85%。紅色表示啟用&lt; 40%。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html#system-manager-procedure" target="_blank" rel="noopener">"瞭解如何在磁碟區上啟用反勒索軟體"</a> 使用System Manager。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">版本ONTAP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">叢集上安裝的更新版本。ONTAP綠色狀態圖示表示版本為最新版本。黃色圖示表示叢集落後1或2個內部部署系統的修補版本或1個次要版本、Cloud Volumes ONTAP 或落後1個主要版本的更新版本。紅色圖示表示叢集落後3個修補程式版本、2個次要版本、或1個主要版本的內部部署系統、或2個主要Cloud Volumes ONTAP 版本的內部更新。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.netapp.com/us-en/ontap/setup-upgrade/index.html" target="_blank" rel="noopener">"瞭解升級內部叢集的最佳方法"</a> 或 <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task_updating_ontap_cloud.html" target="_blank" rel="noopener">"您的系統Cloud Volumes ONTAP"</a>。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">快照</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">是在資料磁碟區上啟動的快照功能、以及有多少百分比的磁碟區有Snapshot複本。綠色狀態圖示表示超過85%的磁碟區已啟用快照。黃色表示啟用40-85%。紅色表示啟用&lt; 40%。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.netapp.com/us-en/ontap/task_dp_configure_snapshot.html" target="_blank" rel="noopener">"瞭解如何在內部叢集上啟用Volume快照"</a> 或 <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task_managing_storage.html#managing-existing-volumes" target="_blank" rel="noopener">"在您的系統上Cloud Volumes ONTAP"</a>。</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
 <h2 id="關鍵業務資料的權限狀態">關鍵業務資料的權限狀態</h2>
 <div class="sectionbody">
 <div class="paragraph">
@@ -774,10 +840,10 @@
 <p><span class="image"><img src="./media/screenshot_ransomware_critical_permissions.png" alt="您在勒索軟體保護儀表板上所管理資料的權限狀態快照。"></span></p>
 </div>
 <div class="paragraph">
-<p>此面板一開始沒有資料、因為資料只會在您選取所建立的Data Sense <em>Policies（資料感測_原則</em>）來檢視最重要的商業資料之後填入。瞭解如何操作 <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#creating-custom-policies" target="_blank" rel="noopener">"使用Data Sense建立原則"</a>。</p>
+<p>此面板一開始會根據我們所選的預設原則顯示資料。但您可以選取您所建立的2項最重要的Data Sense _Policies（資料感測政策）、以檢視最重要的業務資料。瞭解如何操作 <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#creating-custom-policies" target="_blank" rel="noopener">"使用Data Sense建立原則"</a>。</p>
 </div>
 <div class="paragraph">
-<p>在此面板中新增最多2個原則之後、圖表會顯示符合原則條件之所有資料的權限分析。它會列出下列項目數量：</p>
+<p>此圖表顯示符合原則條件的所有資料之權限分析。它會列出下列項目數量：</p>
 </div>
 <div class="ulist">
 <ul>
@@ -800,6 +866,29 @@
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="關鍵業務資料的備份狀態">關鍵業務資料的備份狀態</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>「備份狀態」面板會顯示使用Cloud Backup保護不同類別的資料的方式。這可辨識出備份最重要的資料類別、以因勒索軟體攻擊而需要恢復時、最重要的資料類別有多全面。此資料是工作環境中特定類別項目的備份數量的視覺化表示。</p>
+</div>
+<div class="paragraph">
+<p>此面板僅ONTAP 會顯示已Cloud Volumes ONTAP 使用Cloud Backup _and _掃描的內部環境、以及使用Cloud Data Sense進行備份的內部環境。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_ransomware_backups.png" alt="您在勒索軟體保護儀表板上所管理資料的備份狀態快照。"></span></p>
+</div>
+<div class="paragraph">
+<p>此面板一開始會根據我們所選的預設類別顯示資料。但您可以選取要追蹤的資料類別、例如程式碼檔案、合約等。請參閱完整清單 <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-categories">"類別"</a> 適用於您的工作環境、可從Cloud Data Sense取得。然後選取最多4個類別。</p>
+</div>
+<div class="paragraph">
+<p>填入資料後、將游標移到圖表中的每個方塊上、即可檢視工作環境中所有檔案中備份的檔案數量。綠色方塊表示85%以上的檔案正在備份中。黃色方塊表示40%到85%的檔案正在備份中。紅色方塊表示有40%或更少的檔案正在備份。</p>
+</div>
+<div class="paragraph">
+<p>您可以按一下列末端的「Cloud Backup（雲端備份）」按鈕、前往Cloud Backup介面、以便在每個工作環境中的更多磁碟區上進行備份。</p>
+</div>
+</div>
+</div>
 
     </article>
     <!-- Page Container -->
@@ -819,16 +908,16 @@
               <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/terms-of-use/">legal-terms</a>
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">條款與條件</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/privacy-policy/">legal-privacy</a>
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">Privacy Policy</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/cookie-policy/">legal-cookies</a>
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie Policy</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a class="ot-sdk-show-settings">cookie-settings</a>
+              <a class="ot-sdk-show-settings">Cookie 設定</a>
             </li>
           </ul>
         </div>
