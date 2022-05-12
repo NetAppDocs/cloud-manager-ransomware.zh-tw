@@ -18,6 +18,24 @@ summary: 瞭解勒索軟體保護的新功能。
 
 
 
+== 2022年5月11日
+
+
+
+=== 全新面板可追蹤ONTAP 您的不穩定環境的安全強化。
+
+全新的「強化ONTAP 您的需求環境」面板提供ONTAP 您的支援系統中特定設定的狀態、可追蹤您的部署安全程度、並根據 https://www.netapp.com/pdf.html?item=/media/10674-tr4569.pdf["《NetApp ONTAP 資訊系統安全強化指南》"^] 以及 https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["介紹防勒索軟體功能ONTAP"^] 主動偵測異常活動並提出警告。
+
+您可以檢閱建議、然後決定如何解決潛在問題。您可以依照步驟變更叢集上的設定、將變更延後至其他時間、或忽略建議。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#status-of-ontap-systems-hardening["如需詳細資料、請前往此處"]。
+
+
+
+=== 新的面板可顯示如何使用Cloud Backup來保護不同類別的資料。
+
+這個全新的「備份狀態」面板顯示、如果您因為勒索軟體攻擊而需要恢復、最重要的資料類別將會備份得多麼完整。此資料可視覺化呈現由Cloud Backup備份環境中特定類別的項目數量。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#backup-status-of-your-critical-business-data["如需詳細資料、請前往此處"]。
+
+
+
 == 2022年3月15日
 
 

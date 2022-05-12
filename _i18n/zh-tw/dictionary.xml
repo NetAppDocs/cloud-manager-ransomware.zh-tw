@@ -122,14 +122,11 @@
   <block id="3c55b43a850b4a36aa1cc1d65a454b37" category="inline-image-macro">您在勒索軟體保護儀表板上所管理資料的權限狀態快照。</block>
   <block id="5f06a8506759d69aa6bee6f9a20832c9" category="paragraph"><block ref="5f06a8506759d69aa6bee6f9a20832c9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3567ab10a436a237ecb220a3570e73e6" category="inline-link">使用Data Sense建立原則</block>
-  <block id="824301188a8dca76d7a6db3ecc3d5491" category="paragraph">此面板一開始沒有資料、因為資料只會在您選取所建立的Data Sense _Policies（資料感測_原則_）來檢視最重要的商業資料之後填入。瞭解如何操作<block ref="ca4155a1a04193934b2931c2b97d49e7" category="inline-link-rx"></block>。</block>
-  <block id="1bb207ad78d32d19fdc9cefbaf8c218b" category="paragraph">在此面板中新增最多2個原則之後、圖表會顯示符合原則條件之所有資料的權限分析。它會列出下列項目數量：</block>
   <block id="8ae6bb3a0525cfee738155927a6d3790" category="list-text">開放給大眾使用：Data Sense認為公開的項目</block>
   <block id="cf9aeda95b99fbd16f0e8d6a3445d6fa" category="list-text">開放給組織權限：Data Sense認為對組織開放的項目</block>
   <block id="155f037ceb6aa61bb6ff4100c3e66d82" category="list-text">無開放式權限：Data有意義的項目、將其視為無開放式權限</block>
   <block id="19f8c3ecc67a44c9f2815adb94130679" category="list-text">未知權限：Data有意義視為未知權限的項目</block>
   <block id="777adf7159822b73f7439991204a99cc" category="paragraph">將游標移到圖表中的每個長條上、即可檢視每個類別中的結果數目。按一下長條圖、就會顯示「Data Sense Investigation」（資料感測調查）頁面、以便進一步調查哪些項目具有開啟權限、以及您是否應該調整檔案權限。</block>
-  <block id="30ea15b87dee04538a344ee9ad6eed3b" category="summary">勒索軟體攻擊可能會耗費一定的時間、資源和商譽。勒索軟體保護服務可讓您檢視網路安全的相關資訊、並評估資料對網路攻擊的恢復能力。它也提供警示與修正清單、讓您的資料更安全。</block>
   <block id="586c9af80e3a1e788d0f764fa218a8c1" category="doc">深入瞭解勒索軟體保護</block>
   <block id="2be1e74373d8c6565dc079c5f2766fa2" category="inline-link">瞭解勒索軟體保護的使用案例</block>
   <block id="effbb336e45f46d581aeda0855b4f075" category="paragraph"><block ref="1d0e1a8a3aab3560b76f73789d114aca" category="inline-link-rx"></block>。</block>
@@ -157,14 +154,12 @@
   <block id="69324e9ada23ef5bcac1bc763ac5938e" category="paragraph">*資料來源：*</block>
   <block id="34a23f91ee1733d5151d67d6f922e573" category="list-text">非NetApp檔案共用</block>
   <block id="c58c082d5caf77a57bf200c63dfeaeb9" category="list-text">物件儲存（使用S3傳輸協定）</block>
-  <block id="ea2ef9b0d095bf991f4973633b485340" category="list-text">資料庫</block>
   <block id="807a3c50d901b21b3f3b8e077bc903f8" category="list-text">OneDrive 帳戶</block>
   <block id="5348a3d9617693ca4a8cd2a4df0789c7" category="list-text">SharePoint帳戶</block>
   <block id="b01417dab46c287f85d9b2792be3d20f" category="inline-link">在Cloud Data意義上設定此功能</block>
   <block id="baf7c2e288b369e60a7911ccf0d7843f" category="paragraph">勒索軟體保護功能也會監控您的全域Active Directory組態（若有）<block ref="d685621cbb53c0e90fe734b5c28a2dbe" category="inline-link-rx"></block>。</block>
   <block id="589c1e86e266a18dc3983ba51d0a031b" category="section-title">勒索軟體保護的運作方式</block>
   <block id="7decc1126c0bc1b92923147bff845cde" category="paragraph">在高層級的勒索軟體保護、運作方式如下：</block>
-  <block id="ed47a881805b813c0ec26c370ffa973f" category="list-text">勒索軟體保護會從Cloud Data Sense、Cloud Backup及其他Cloud Manager資源收集資訊、以填入勒索軟體保護儀表板。</block>
   <block id="4c5eb95a9e7808face08edae00ea13d5" category="list-text">您可以使用勒索軟體保護儀表板來取得系統保護程度的總覽。</block>
   <block id="ddb1029c89fa39456180abaf191e6b60" category="list-text">您可以使用所提供的報告工具來協助保護網路儲存設備。</block>
   <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">成本</block>
@@ -205,4 +200,64 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp社群</block>
   <block id="ff6c37cbc252e306a6b4e390ec13cbc1" category="sidebar">Cloud Central部落格</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">雲端網路研討會</block>
+  <block id="75fa1dc70cb764f71fe44466fc81bddc" category="summary">勒索軟體攻擊可能會耗費一定的時間、資源和商譽。勒索軟體保護服務可讓您檢視網路安全相關資訊、並評估貴組織對於網路攻擊的應變能力。它也提供警示與修正清單、讓您的資料更安全。</block>
+  <block id="bdf71233b9b0efa87a2aca5c0fad260a" category="list-text">您工作環境中的磁碟區無法透過定期Snapshot複本來保護。</block>
+  <block id="89039f2e901dd96f2eda729eef419e62" category="paragraph">從勒索軟體保護的角度來看、這項功能也很重要、因為它能讓您更清楚瞭解重要（敏感、業務關鍵）資料的位置、確保您能將保護重點放在那裡。</block>
+  <block id="ca9c3f0f3774ed774563bc8dd5808969" category="list-text">您最重要的資料類別並未備份、以防萬一發生勒索軟體攻擊而需要恢復。</block>
+  <block id="d5eb702421e2cc525e648eeebbdbd258" category="list-text">叢集上的更新版本為舊版、應更新以提供最佳的保護與安全功能。ONTAP</block>
+  <block id="8dde611eee96a2ced9961bcba422ef09" category="list-text">您的系統無法啟用隨裝即用的勒索軟體功能ONTAP 。</block>
+  <block id="4944c9c65fff384675d8baccb34860d8" category="paragraph">此功能可主動偵測及警告可能表示勒索軟體攻擊的異常活動。ONTAP</block>
+  <block id="bdcce4158cfc2b8c6a2ccd87f6c5170b" category="list-text">資料庫（Amazon RDS、MongoDB、MySQL、Oracle、PostgreSQL、 SAP HANA、SQL Server）</block>
+  <block id="c6bcf4a88b4c531d404128df1f1ad3a8" category="list-text">Google雲端硬碟帳戶</block>
+  <block id="65d832de889f26b8047634bb1675e532" category="list-text">勒索軟體保護會從您的儲存系統、Cloud Data Sense、Cloud Backup及其他Cloud Manager資源收集資訊、以填入勒索軟體保護儀表板。</block>
+  <block id="7d6adafb3c8bb3861e1f6a4ca4b68455" category="section-title">2022年5月11日</block>
+  <block id="55a52ff3da54b1be61be4ffbf282e94a" category="section-title">全新面板可追蹤ONTAP 您的不穩定環境的安全強化。</block>
+  <block id="9c7ce6244ca9eb3215d61dd69afa3325" category="inline-link">《NetApp ONTAP 資訊系統安全強化指南》</block>
+  <block id="3380ed6ae32f99410860532de07b57a7" category="inline-link">介紹防勒索軟體功能ONTAP</block>
+  <block id="c0920e0c17ca7e741f375b33ea0a761b" category="paragraph">全新的「強化ONTAP 您的需求環境」面板提供ONTAP 您的支援系統中特定設定的狀態、可追蹤您的部署安全程度、並根據<block ref="060f8a2b53a60ac49c67caafaf5b129f" category="inline-link-rx"></block> 以及<block ref="0be7bd5b5f280e211653a4c6e05c11a6" category="inline-link-rx"></block> 主動偵測異常活動並提出警告。</block>
+  <block id="914a5a27ea412edf84bb416054ec6d75" category="paragraph">您可以檢閱建議、然後決定如何解決潛在問題。您可以依照步驟變更叢集上的設定、將變更延後至其他時間、或忽略建議。<block ref="87553c653b94d5529a2080374ec70030" category="inline-link-rx"></block>。</block>
+  <block id="76553642514a4b204c12afe14df42e92" category="section-title">新的面板可顯示如何使用Cloud Backup來保護不同類別的資料。</block>
+  <block id="c55588bedd5ed04bd522d770a0c3de70" category="paragraph">這個全新的「備份狀態」面板顯示、如果您因為勒索軟體攻擊而需要恢復、最重要的資料類別將會備份得多麼完整。此資料可視覺化呈現由Cloud Backup備份環境中特定類別的項目數量。<block ref="eddc9c9a841fbf81e5d5b5a19c7e11a3" category="inline-link-rx"></block>。</block>
+  <block id="5592b65ac68ee08e7e4d72e1db4c8c57" category="cell">內建的勒索軟體並非適用於所有磁碟區</block>
+  <block id="3e4cd8785a12dd4af37c0d4961022f96" category="inline-link">NetApp反勒索軟體功能</block>
+  <block id="7aa34ccd4933956082a1db1a1dcb9386" category="cell">內部ONTAP 的某些Volume無法使用<block ref="c430ca7dfd9bb0dbfe1053348a62639f" category="inline-link-rx"></block> 已啟用。</block>
+  <block id="f8aa88150742f7039dc7a7ef56fe7ecc" category="inline-xref">強化ONTAP 您的「需求環境」面板</block>
+  <block id="fda1498fd18521d8c00ada8cf68c0f89" category="cell">按一下連結、即可將您重新導向至 <block ref="e60df9b32c12ff1b69061e150f46f08e" category="inline-xref-macro-rx"></block> 以及問題所在的工作環境。您可以在這裡調查解決問題的最佳方式。</block>
+  <block id="c13d5346bb8b2abfdcb9c4d94c922f1a" category="cell">不更新版本ONTAP</block>
+  <block id="d001b5ead06b9ede8cbbf86a37adc3ec" category="cell">安裝在叢集上的版本不符合所提供的建議ONTAP<block ref="060f8a2b53a60ac49c67caafaf5b129f" category="inline-link-rx"></block>。</block>
+  <block id="0a7f54737c4406db7936c0b0bffb40ef" category="cell">未針對所有磁碟區設定快照</block>
+  <block id="0bc3a3903adf836de2c855cd40611eab" category="cell">工作環境中的部分磁碟區無法透過建立磁碟區快照來保護。</block>
+  <block id="ba82eec4834347b5a1b3d627cccfd0a2" category="section-title">鞏固不均系統的狀態ONTAP</block>
+  <block id="522328976b36de5b8d745ce46d07e938" category="paragraph">「_Harden Your ONTAP SUREYSURITY」面板提供ONTAP 您的某些支援系統設定的狀態、可追蹤您的部署安全程度、並根據<block ref="060f8a2b53a60ac49c67caafaf5b129f" category="inline-link-rx"></block> 以及<block ref="0be7bd5b5f280e211653a4c6e05c11a6" category="inline-link-rx"></block> 主動偵測異常活動並提出警告。</block>
+  <block id="d7e8b0e94bc7dcc93f421c7fc79dfffa" category="paragraph">您可以檢閱建議、然後決定如何解決潛在問題。您可以依照步驟變更叢集上的設定、將變更延後至其他時間、或忽略建議。</block>
+  <block id="bd44e2921ae1a42eb3a5dc08696e7b0e" category="paragraph">此面板ONTAP 目前支援Cloud Volumes ONTAP 內部的NetApp ONTAP 支援功能、包括內部的功能、功能、功能、以及Amazon FSX for NetApp等系統。</block>
+  <block id="cf883a9477c6275016bd317d9ac38844" category="inline-image-macro">勒索軟體保護儀表板上有關強化功能狀態的快照ONTAP 。</block>
+  <block id="da0f95ed9d75ac4d5d3b7644ac2fd0b7" category="paragraph"><block ref="da0f95ed9d75ac4d5d3b7644ac2fd0b7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bc6d33a925140a3460ad6681dc5242bc" category="paragraph">正在追蹤的設定包括：</block>
+  <block id="e9f0aaae56580f9096af03ba526b177c" category="cell">強化目標</block>
+  <block id="1cbf843c3a5a0832d8cf0cdcf1135a78" category="cell">不勒索軟體ONTAP</block>
+  <block id="668049b833f74a4da25e90299e223ec3" category="cell">啟動內建勒索軟體的磁碟區百分比。僅對內部ONTAP 的供應系統有效。綠色狀態圖示表示已啟用超過85%的磁碟區。黃色表示啟用40-85%。紅色表示啟用&lt; 40%。</block>
+  <block id="5548081e3623b5964eda1074b3e71b59" category="inline-link">瞭解如何在磁碟區上啟用反勒索軟體</block>
+  <block id="ad488d126384370795bd3187eef1e396" category="cell"><block ref="1a378d16128702117eeef84a905af055" category="inline-link-rx"></block> 使用System Manager。</block>
+  <block id="e8467e9b509c4924668c01eb7ab2adde" category="cell">版本ONTAP</block>
+  <block id="31d81eb6324899c415d867559799335f" category="cell">叢集上安裝的更新版本。ONTAP綠色狀態圖示表示版本為最新版本。黃色圖示表示叢集落後1或2個內部部署系統的修補版本或1個次要版本、Cloud Volumes ONTAP 或落後1個主要版本的更新版本。紅色圖示表示叢集落後3個修補程式版本、2個次要版本、或1個主要版本的內部部署系統、或2個主要Cloud Volumes ONTAP 版本的內部更新。</block>
+  <block id="0798f817dc1443dc9f38ec02333f79aa" category="inline-link">瞭解升級內部叢集的最佳方法</block>
+  <block id="bd049a4521e272ef2c19305d5ce4e5e1" category="inline-link">您的系統Cloud Volumes ONTAP</block>
+  <block id="4867a1cb8e3719b51ef967ab80e53e8f" category="cell"><block ref="ebf13e67cf6307ed02967adbb6711cdb" category="inline-link-rx"></block> 或<block ref="6150641a317e0d5077ba6e5e03ee5ee3" category="inline-link-rx"></block>。</block>
+  <block id="9147e5e61a7b9260dec09f3a6eb3e5be" category="cell">快照</block>
+  <block id="fa1cc5ad543a3d3532ed24192f00dab0" category="cell">是在資料磁碟區上啟動的快照功能、以及有多少百分比的磁碟區有Snapshot複本。綠色狀態圖示表示超過85%的磁碟區已啟用快照。黃色表示啟用40-85%。紅色表示啟用&lt; 40%。</block>
+  <block id="fcb0bd0c7d52a8e69bc675e26e703a23" category="inline-link">瞭解如何在內部叢集上啟用Volume快照</block>
+  <block id="fed5603b3da12b224d2c5a4744d84db6" category="inline-link">在您的系統上Cloud Volumes ONTAP</block>
+  <block id="65e047e44fd4275bef3660402ed0fc17" category="cell"><block ref="9217c403e6fe97a9a176c63ac6ba2b68" category="inline-link-rx"></block> 或<block ref="d709500d882db836e58c0872959bd621" category="inline-link-rx"></block>。</block>
+  <block id="aac2820f28cdf9767df626982701f227" category="paragraph">此面板一開始會根據我們所選的預設原則顯示資料。但您可以選取您所建立的2項最重要的Data Sense _Policies（資料感測政策）、以檢視最重要的業務資料。瞭解如何操作<block ref="ca4155a1a04193934b2931c2b97d49e7" category="inline-link-rx"></block>。</block>
+  <block id="d7a430aef362e0674d0e4f46cc4e0826" category="paragraph">此圖表顯示符合原則條件的所有資料之權限分析。它會列出下列項目數量：</block>
+  <block id="01238444606a763f352d68cd714ac7c9" category="section-title">關鍵業務資料的備份狀態</block>
+  <block id="0491f5d6ebe0fed41bfa46c7e738b75d" category="paragraph">「備份狀態」面板會顯示使用Cloud Backup保護不同類別的資料的方式。這可辨識出備份最重要的資料類別、以因勒索軟體攻擊而需要恢復時、最重要的資料類別有多全面。此資料是工作環境中特定類別項目的備份數量的視覺化表示。</block>
+  <block id="e06ca176fe4562d53f395cf2b90b6a53" category="paragraph">此面板僅ONTAP 會顯示已Cloud Volumes ONTAP 使用Cloud Backup _and _掃描的內部環境、以及使用Cloud Data Sense進行備份的內部環境。</block>
+  <block id="2f022aed3bb5c1786e608506446300af" category="inline-image-macro">您在勒索軟體保護儀表板上所管理資料的備份狀態快照。</block>
+  <block id="30af967d53499711f7ea42b108e0b563" category="paragraph"><block ref="30af967d53499711f7ea42b108e0b563" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b0b5ccb4a195a07fd3eed14affb8695f" category="inline-link">類別</block>
+  <block id="f6c10502779e9890e96477c5311d212f" category="paragraph">此面板一開始會根據我們所選的預設類別顯示資料。但您可以選取要追蹤的資料類別、例如程式碼檔案、合約等。請參閱完整清單<block ref="cffd3331f5cb204084a40331444df4fd" category="inline-link-rx"></block> 適用於您的工作環境、可從Cloud Data Sense取得。然後選取最多4個類別。</block>
+  <block id="d6eb5dc1abeab0ff34111bbaa52c3db3" category="paragraph">填入資料後、將游標移到圖表中的每個方塊上、即可檢視工作環境中所有檔案中備份的檔案數量。綠色方塊表示85%以上的檔案正在備份中。黃色方塊表示40%到85%的檔案正在備份中。紅色方塊表示有40%或更少的檔案正在備份。</block>
+  <block id="cd78e0c0868be8e03c054039b311a66c" category="paragraph">您可以按一下列末端的「Cloud Backup（雲端備份）」按鈕、前往Cloud Backup介面、以便在每個工作環境中的更多磁碟區上進行備份。</block>
 </blocks>

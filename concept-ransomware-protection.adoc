@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-ransomware-protection.html 
 keywords: artificial intelligence, personal data, personal information, sensitive, personal sensitive data, data sense, ransomware, ransomware protection, cyberstorage, cyber attack, cybersecurity 
-summary: 勒索軟體攻擊可能會耗費一定的時間、資源和商譽。勒索軟體保護服務可讓您檢視網路安全的相關資訊、並評估資料對網路攻擊的恢復能力。它也提供警示與修正清單、讓您的資料更安全。 
+summary: 勒索軟體攻擊可能會耗費一定的時間、資源和商譽。勒索軟體保護服務可讓您檢視網路安全相關資訊、並評估貴組織對於網路攻擊的應變能力。它也提供警示與修正清單、讓您的資料更安全。 
 ---
 = 深入瞭解勒索軟體保護
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 勒索軟體攻擊可能會耗費一定的時間、資源和商譽。�
 
 
 [role="lead"]
-勒索軟體攻擊可能會耗費一定的時間、資源和商譽。勒索軟體保護服務可讓您檢視網路安全的相關資訊、並評估資料對網路攻擊的恢復能力。它也提供警示與修正清單、讓您的資料更安全。
+勒索軟體攻擊可能會耗費一定的時間、資源和商譽。勒索軟體保護服務可讓您檢視網路安全相關資訊、並評估貴組織對於網路攻擊的應變能力。它也提供警示與修正清單、讓您的資料更安全。
 
 https://cloud.netapp.com/cyberstorage["瞭解勒索軟體保護的使用案例"^]。
 
@@ -27,14 +27,24 @@ TIP: 勒索軟體保護服務目前是試用版產品。
 
 勒索軟體保護目前提供多項功能、可協助您保護網路儲存設備。未來將會新增其他功能。目前功能可識別下列時機：
 
+* 您工作環境中的磁碟區無法透過定期Snapshot複本來保護。
 * 您工作環境中的磁碟區無法透過使用建立備份至雲端來保護 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["雲端備份"^]。
 * 您工作環境中的資料和資料來源並未使用進行掃描 https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["雲端資料感測"^] 找出法規遵循與隱私權方面的考量、並找出最佳化商機。
++
+從勒索軟體保護的角度來看、這項功能也很重要、因為它能讓您更清楚瞭解重要（敏感、業務關鍵）資料的位置、確保您能將保護重點放在那裡。
+
+* 您最重要的資料類別並未備份、以防萬一發生勒索軟體攻擊而需要恢復。
 * 在工作環境或資料來源中、加密檔案的百分比出現異常增加。
 +
 這可能是勒索軟體攻擊在您的網路上開始的指標。
 
 * 敏感資料位於檔案中、而在工作環境或資料來源中、存取權限等級太高。
 * 使用者已新增至Active Directory網域管理員群組。
+* 叢集上的更新版本為舊版、應更新以提供最佳的保護與安全功能。ONTAP
+* 您的系統無法啟用隨裝即用的勒索軟體功能ONTAP 。
++
+此功能可主動偵測及警告可能表示勒索軟體攻擊的異常活動。ONTAP
+
 
 
 link:task-analyze-ransomware-data.html["請參閱勒索軟體保護儀表板、瞭解如何檢視這些潛在問題。"]
@@ -60,9 +70,10 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.
 
 * 非NetApp檔案共用
 * 物件儲存（使用S3傳輸協定）
-* 資料庫
+* 資料庫（Amazon RDS、MongoDB、MySQL、Oracle、PostgreSQL、 SAP HANA、SQL Server）
 * OneDrive 帳戶
 * SharePoint帳戶
+* Google雲端硬碟帳戶
 
 
 勒索軟體保護功能也會監控您的全域Active Directory組態（若有） https://docs.netapp.com/us-en/cloud-manager-data-sense/task-add-active-directory-datasense.html["在Cloud Data意義上設定此功能"^]。
@@ -73,7 +84,7 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.
 
 在高層級的勒索軟體保護、運作方式如下：
 
-. 勒索軟體保護會從Cloud Data Sense、Cloud Backup及其他Cloud Manager資源收集資訊、以填入勒索軟體保護儀表板。
+. 勒索軟體保護會從您的儲存系統、Cloud Data Sense、Cloud Backup及其他Cloud Manager資源收集資訊、以填入勒索軟體保護儀表板。
 . 您可以使用勒索軟體保護儀表板來取得系統保護程度的總覽。
 . 您可以使用所提供的報告工具來協助保護網路儲存設備。
 
