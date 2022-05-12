@@ -137,10 +137,10 @@ image:screenshot_ransomware_harden_ontap.png["勒索軟體保護儀表板上有�
 | 不勒索軟體ONTAP | 啟動內建勒索軟體的磁碟區百分比。僅對內部ONTAP 的供應系統有效。綠色狀態圖示表示已啟用超過85%的磁碟區。黃色表示啟用40-85%。紅色表示啟用< 40%。 | https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html#system-manager-procedure["瞭解如何在磁碟區上啟用反勒索軟體"^] 使用System Manager。 
 
 
-| 版本ONTAP | 叢集上安裝的更新版本。ONTAP綠色狀態圖示表示版本為最新版本。黃色圖示表示叢集落後1或2個內部部署系統的修補版本或1個次要版本、Cloud Volumes ONTAP 或落後1個主要版本的更新版本。紅色圖示表示叢集落後3個修補程式版本、2個次要版本、或1個主要版本的內部部署系統、或2個主要Cloud Volumes ONTAP 版本的內部更新。 | https://docs.netapp.com/us-en/ontap/setup-upgrade/index.html["瞭解升級內部叢集的最佳方法"^] 或 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task_updating_ontap_cloud.html["您的系統Cloud Volumes ONTAP"^]。 
+| 版本ONTAP | 叢集上安裝的更新版本。ONTAP綠色狀態圖示表示版本為最新版本。黃色圖示表示叢集落後1或2個內部部署系統的修補版本或1個次要版本、Cloud Volumes ONTAP 或落後1個主要版本的更新版本。紅色圖示表示叢集落後3個修補程式版本、2個次要版本、或1個主要版本的內部部署系統、或2個主要Cloud Volumes ONTAP 版本的內部更新。 | https://docs.netapp.com/us-en/ontap/setup-upgrade/index.html["瞭解升級內部叢集的最佳方法"^] 或 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["您的系統Cloud Volumes ONTAP"^]。 
 
 
-| 快照 | 是在資料磁碟區上啟動的快照功能、以及有多少百分比的磁碟區有Snapshot複本。綠色狀態圖示表示超過85%的磁碟區已啟用快照。黃色表示啟用40-85%。紅色表示啟用< 40%。 | https://docs.netapp.com/us-en/ontap/task_dp_configure_snapshot.html["瞭解如何在內部叢集上啟用Volume快照"^] 或 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task_managing_storage.html#managing-existing-volumes["在您的系統上Cloud Volumes ONTAP"^]。 
+| 快照 | 是在資料磁碟區上啟動的快照功能、以及有多少百分比的磁碟區有Snapshot複本。綠色狀態圖示表示超過85%的磁碟區已啟用快照。黃色表示啟用40-85%。紅色表示啟用< 40%。 | https://docs.netapp.com/us-en/ontap/task_dp_configure_snapshot.html["瞭解如何在內部叢集上啟用Volume快照"^]或 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-volumes.html#manage-volumes["在您的系統上Cloud Volumes ONTAP"^]或 https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-fsx-volumes.html#manage-snapshot-copies["在FSXfor ONTAP Sfor Sf系 上"^]。 
 |===
 
 

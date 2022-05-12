@@ -243,12 +243,10 @@
   <block id="31d81eb6324899c415d867559799335f" category="cell">叢集上安裝的更新版本。ONTAP綠色狀態圖示表示版本為最新版本。黃色圖示表示叢集落後1或2個內部部署系統的修補版本或1個次要版本、Cloud Volumes ONTAP 或落後1個主要版本的更新版本。紅色圖示表示叢集落後3個修補程式版本、2個次要版本、或1個主要版本的內部部署系統、或2個主要Cloud Volumes ONTAP 版本的內部更新。</block>
   <block id="0798f817dc1443dc9f38ec02333f79aa" category="inline-link">瞭解升級內部叢集的最佳方法</block>
   <block id="bd049a4521e272ef2c19305d5ce4e5e1" category="inline-link">您的系統Cloud Volumes ONTAP</block>
-  <block id="4867a1cb8e3719b51ef967ab80e53e8f" category="cell"><block ref="ebf13e67cf6307ed02967adbb6711cdb" category="inline-link-rx"></block> 或<block ref="6150641a317e0d5077ba6e5e03ee5ee3" category="inline-link-rx"></block>。</block>
   <block id="9147e5e61a7b9260dec09f3a6eb3e5be" category="cell">快照</block>
   <block id="fa1cc5ad543a3d3532ed24192f00dab0" category="cell">是在資料磁碟區上啟動的快照功能、以及有多少百分比的磁碟區有Snapshot複本。綠色狀態圖示表示超過85%的磁碟區已啟用快照。黃色表示啟用40-85%。紅色表示啟用&lt; 40%。</block>
   <block id="fcb0bd0c7d52a8e69bc675e26e703a23" category="inline-link">瞭解如何在內部叢集上啟用Volume快照</block>
   <block id="fed5603b3da12b224d2c5a4744d84db6" category="inline-link">在您的系統上Cloud Volumes ONTAP</block>
-  <block id="65e047e44fd4275bef3660402ed0fc17" category="cell"><block ref="9217c403e6fe97a9a176c63ac6ba2b68" category="inline-link-rx"></block> 或<block ref="d709500d882db836e58c0872959bd621" category="inline-link-rx"></block>。</block>
   <block id="aac2820f28cdf9767df626982701f227" category="paragraph">此面板一開始會根據我們所選的預設原則顯示資料。但您可以選取您所建立的2項最重要的Data Sense _Policies（資料感測政策）、以檢視最重要的業務資料。瞭解如何操作<block ref="ca4155a1a04193934b2931c2b97d49e7" category="inline-link-rx"></block>。</block>
   <block id="d7a430aef362e0674d0e4f46cc4e0826" category="paragraph">此圖表顯示符合原則條件的所有資料之權限分析。它會列出下列項目數量：</block>
   <block id="01238444606a763f352d68cd714ac7c9" category="section-title">關鍵業務資料的備份狀態</block>
@@ -260,4 +258,7 @@
   <block id="f6c10502779e9890e96477c5311d212f" category="paragraph">此面板一開始會根據我們所選的預設類別顯示資料。但您可以選取要追蹤的資料類別、例如程式碼檔案、合約等。請參閱完整清單<block ref="cffd3331f5cb204084a40331444df4fd" category="inline-link-rx"></block> 適用於您的工作環境、可從Cloud Data Sense取得。然後選取最多4個類別。</block>
   <block id="d6eb5dc1abeab0ff34111bbaa52c3db3" category="paragraph">填入資料後、將游標移到圖表中的每個方塊上、即可檢視工作環境中所有檔案中備份的檔案數量。綠色方塊表示85%以上的檔案正在備份中。黃色方塊表示40%到85%的檔案正在備份中。紅色方塊表示有40%或更少的檔案正在備份。</block>
   <block id="cd78e0c0868be8e03c054039b311a66c" category="paragraph">您可以按一下列末端的「Cloud Backup（雲端備份）」按鈕、前往Cloud Backup介面、以便在每個工作環境中的更多磁碟區上進行備份。</block>
+  <block id="c520be19d736e28ac258be212caaa6a5" category="cell"><block ref="ebf13e67cf6307ed02967adbb6711cdb" category="inline-link-rx"></block> 或<block ref="57f03f2d814ee68f8cab383ca5276240" category="inline-link-rx"></block>。</block>
+  <block id="b9de0627ae5b338bc6c5d66e26fd1ebc" category="inline-link">在FSXfor ONTAP Sfor Sf系 上</block>
+  <block id="3b87b8dcbc175954773151e5cdbe57d2" category="cell"><block ref="9217c403e6fe97a9a176c63ac6ba2b68" category="inline-link-rx"></block>或<block ref="a83b33f58a6c49ebc8dc0bebb61ff0e7" category="inline-link-rx"></block>或<block ref="655b9f4a8bcbab74e9e21d268c925508" category="inline-link-rx"></block>。</block>
 </blocks>
