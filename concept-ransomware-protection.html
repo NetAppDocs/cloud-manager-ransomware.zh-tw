@@ -277,35 +277,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">繁體中文</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">繁體中文</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-tw/cloud-manager-ransomware/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/cloud-manager-ransomware/concept-ransomware-protection.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/cloud-manager-ransomware/concept-ransomware-protection.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/cloud-manager-ransomware/concept-ransomware-protection.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/cloud-manager-ransomware/concept-ransomware-protection.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/cloud-manager-ransomware/concept-ransomware-protection.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/zh-tw/cloud-manager-ransomware/concept-ransomware-protection.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/cloud-manager-ransomware/concept-ransomware-protection.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/cloud-manager-ransomware/concept-ransomware-protection.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/cloud-manager-ransomware/concept-ransomware-protection.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/cloud-manager-ransomware/concept-ransomware-protection.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -360,8 +352,6 @@
         
         <a target="_blank" href="/zh-tw/cloud-manager-ransomware/pdfs/fullsite-sidebar/勒索軟體保護文件.pdf" >
           <img src="/zh-tw/cloud-manager-ransomware/images/pdf.png" width="16" height="16"/>此文件網站（PDF 格式）</a>
-
-
 
 
 
@@ -496,10 +486,10 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
-  <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="https://docs.netapp.com/us-en/cloud-manager-family">
-        所有Cloud Manager文件
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-ransomware/index.html">
+</script><div class="prod-nav" id="product-nav">
+  <a target="_self" class="prod-fam-nav" href="https://docs.netapp.com/zh-tw/cloud-manager-family/"><img src="/zh-tw/cloud-manager-ransomware/images/left_arrow.png" alt=""><pre>All Cloud Manager documentation</pre></a>
+</div><div class="sidebar-nav-container" id="mysidebardiv">
+  <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-ransomware/index.html">
         勒索軟體保護文件
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-ransomware/whats-new.html">
         版本資訊
@@ -591,7 +581,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-12 13:01:14 +0000">05/12/2022</time>
+    <time datetime="2022-06-13 12:48:20 +0000">06/13/2022</time>
     
   
 
@@ -624,7 +614,7 @@
 <h2 id="功能">功能</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>勒索軟體保護目前提供多項功能、可協助您保護網路儲存設備。未來將會新增其他功能。目前功能可識別下列時機：</p>
+<p>勒索軟體保護功能提供單一可見度和控管能力、可管理及改善各種工作環境和基礎架構層級的資料安全性、以便在發生威脅時更有效地回應威脅。它目前提供多項功能、可協助您保護網路儲存設備。未來將會新增其他功能。目前功能可識別下列時機：</p>
 </div>
 <div class="ulist">
 <ul>
@@ -657,6 +647,12 @@
 </li>
 <li>
 <p>叢集上的更新版本為舊版、應更新以提供最佳的保護與安全功能。ONTAP</p>
+</li>
+<li>
+<p>您的無法在您的不支援的系統上啟用NAS檔案系統稽核ONTAP 。</p>
+<div class="paragraph">
+<p>啟用CIFS稽核會為系統管理員產生稽核事件、以追蹤資料夾權限變更、嘗試讀取或寫入檔案失敗、以及檔案建立、修改或刪除的資訊。</p>
+</div>
 </li>
 <li>
 <p>您的系統無法啟用隨裝即用的勒索軟體功能ONTAP 。</p>
@@ -907,4 +903,5 @@
     </script>
     <script src='/zh-tw/cloud-manager-ransomware/js/www-ntap.js'></script>
     <script src='/zh-tw/cloud-manager-ransomware/js/tabbed-blocks.js'></script>
+    <script src='/zh-tw/cloud-manager-ransomware/js/sidebar.js'></script>
   </body></html>

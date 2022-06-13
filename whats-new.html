@@ -277,35 +277,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">繁體中文</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">繁體中文</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-tw/cloud-manager-ransomware/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/cloud-manager-ransomware/whats-new.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/cloud-manager-ransomware/whats-new.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/cloud-manager-ransomware/whats-new.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/cloud-manager-ransomware/whats-new.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/cloud-manager-ransomware/whats-new.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/zh-tw/cloud-manager-ransomware/whats-new.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/cloud-manager-ransomware/whats-new.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/cloud-manager-ransomware/whats-new.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/cloud-manager-ransomware/whats-new.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/cloud-manager-ransomware/whats-new.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -360,8 +352,6 @@
         
         <a target="_blank" href="/zh-tw/cloud-manager-ransomware/pdfs/fullsite-sidebar/勒索軟體保護文件.pdf" >
           <img src="/zh-tw/cloud-manager-ransomware/images/pdf.png" width="16" height="16"/>此文件網站（PDF 格式）</a>
-
-
 
 
     <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
@@ -496,10 +486,10 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
-  <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="https://docs.netapp.com/us-en/cloud-manager-family">
-        所有Cloud Manager文件
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-ransomware/index.html">
+</script><div class="prod-nav" id="product-nav">
+  <a target="_self" class="prod-fam-nav" href="https://docs.netapp.com/zh-tw/cloud-manager-family/"><img src="/zh-tw/cloud-manager-ransomware/images/left_arrow.png" alt=""><pre>All Cloud Manager documentation</pre></a>
+</div><div class="sidebar-nav-container" id="mysidebardiv">
+  <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-ransomware/index.html">
         勒索軟體保護文件
       </a></li><li class="  active "><a class="na-navbar-padding" href="/zh-tw/cloud-manager-ransomware/whats-new.html">
         版本資訊
@@ -591,7 +581,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-12 13:01:14 +0000">05/12/2022</time>
+    <time datetime="2022-06-13 12:48:20 +0000">06/13/2022</time>
     
   
 
@@ -606,12 +596,35 @@
 </div>
 </div>
 <div class="sect1">
+<h2 id="2022年6月12日">2022年6月12日</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="nas檔案系統稽核狀態現在會針對ontap-您的不完整儲存vm進行追蹤">NAS檔案系統稽核狀態現在會針對ONTAP 您的不完整儲存VM進行追蹤</h3>
+<div class="paragraph">
+<p>如果工作環境中少於40%的儲存VM啟用檔案系統稽核、則會在_Cyber Resilience Map_中新增警示。您可以在「<em>Harden Your ONTAP Sfor enapenity</em>」面板中、檢視未追蹤SMB和NFS事件的確切SVM數、並將其記錄到稽核記錄檔中。然後您可以決定是否對這些SVM啟用稽核。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="當您的磁碟區未啟用隨裝即用的勒索軟體時就會顯示警示">當您的磁碟區未啟用隨裝即用的勒索軟體時、就會顯示警示</h3>
+<div class="paragraph">
+<p>此資訊已在ONTAP 「<em>Harden Your ONTAP Sfor the Ezenology</em>」面板中報告、 但現在、當開箱內的勒索軟體功能在不到40%的磁碟區中開啟時、_網路還原地圖_會報告警示、以便您在儀表板中檢視此資訊。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="現在ontap-我們會追蹤fsx-for-sfor-sfor-sfor-sfor-sfor-systems以啟用volume快照">現在ONTAP 、我們會追蹤FSX for Sfor Sfor Sfor Sfor Sfor Systems以啟用Volume快照</h3>
+<div class="paragraph">
+<p>「<em>Harden Your ONTAP Sfor Ezh enievenienials</em>」面板現在提供FSX for ONTAP EzSystems上Volume的Snapshot複本狀態。如果有不到40%的磁碟區受到快照保護、您也會在_網路還原地圖_中收到警示。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
 <h2 id="2022年5月11日">2022年5月11日</h2>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="全新面板可追蹤ontap-您的不穩定環境的安全強化">全新面板可追蹤ONTAP 您的不穩定環境的安全強化。</h3>
 <div class="paragraph">
-<p>全新的「強化ONTAP 您的需求環境」面板提供ONTAP 您的支援系統中特定設定的狀態、可追蹤您的部署安全程度、並根據 <a href="https://www.netapp.com/pdf.html?item=/media/10674-tr4569.pdf" target="_blank" rel="noopener">"《NetApp ONTAP 資訊系統安全強化指南》"</a> 以及 <a href="https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html" target="_blank" rel="noopener">"介紹防勒索軟體功能ONTAP"</a> 主動偵測異常活動並提出警告。</p>
+<p>全新的面板_Harden Your ONTAP SUREYS段 環境_提供ONTAP 您的某些支援系統設定的狀態、可追蹤您的部署安全程度、並根據 <a href="https://www.netapp.com/pdf.html?item=/media/10674-tr4569.pdf" target="_blank" rel="noopener">"《NetApp ONTAP 資訊系統安全強化指南》"</a> 以及 <a href="https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html" target="_blank" rel="noopener">"介紹防勒索軟體功能ONTAP"</a> 主動偵測異常活動並提出警告。</p>
 </div>
 <div class="paragraph">
 <p>您可以檢閱建議、然後決定如何解決潛在問題。您可以依照步驟變更叢集上的設定、將變更延後至其他時間、或忽略建議。 <a href="https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#status-of-ontap-systems-hardening">"如需詳細資料、請前往此處"</a>。</p>
@@ -651,7 +664,7 @@
 <p>全新的勒索軟體保護服務可讓您檢視網路安全相關資訊、並評估資料對網路攻擊的恢復能力。它也提供警示與修正清單、讓您的資料更安全。</p>
 </div>
 <div class="paragraph">
-<p><a href="https://docs.netapp.com/us-en/cloud-manager-ransomware/concept-ransomware-protection.html">"深入瞭解這項新服務"</a>。</p>
+<p><a href="concept-ransomware-protection.html">"深入瞭解這項新服務"</a>。</p>
 </div>
 </div>
 </div>
@@ -802,4 +815,5 @@
     </script>
     <script src='/zh-tw/cloud-manager-ransomware/js/www-ntap.js'></script>
     <script src='/zh-tw/cloud-manager-ransomware/js/tabbed-blocks.js'></script>
+    <script src='/zh-tw/cloud-manager-ransomware/js/sidebar.js'></script>
   </body></html>
