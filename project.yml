@@ -10,8 +10,6 @@ settings:
   langs: zh-tw,us-en,ja-jp,zh-cn,ko-kr
 sidebar:
   entries:
-  - title: 所有Cloud Manager文件
-    url: https://docs.netapp.com/us-en/cloud-manager-family
   - title: 勒索軟體保護文件
     url: "/index.html"
   - title: 版本資訊
@@ -50,6 +48,8 @@ homepage:
       url: task-analyze-ransomware-data.html#data-listed-by-types-of-open-permissions
     - title: 檢視以加密檔案列出的資料
       url: task-analyze-ransomware-data.html#data-listed-by-encrypted-files
+    - title: 檢視ONTAP 您的不受勒索軟體保護的不安全程度
+      url: task-analyze-ransomware-data.html#status-of-ontap-systems-hardening
   - title: 部落格社群
     links:
     - title: NetApp社群
@@ -61,3 +61,4 @@ homepage:
 product-family:
   name: Cloud Manager
   repo: cloud-manager-family
+  sidebar_label: All Cloud Manager documentation

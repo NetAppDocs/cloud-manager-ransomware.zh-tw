@@ -47,14 +47,12 @@
   <block id="f670023c78e0e3dbeb691779659d5049" category="section-title">2022年3月15日</block>
   <block id="70ca849e4710f5c98451b61f2b47e5a8" category="section-title">新的面板可追蹤業務關鍵資料的權限狀態</block>
   <block id="6aa300e24ddf3ee5a99bbb1cf5bb4a72" category="inline-link">如需詳細資料、請前往此處</block>
-  <block id="5816bf17c72947dceb173c559c3f6009" category="paragraph">新的「業務關鍵資料權限分析」面板會顯示資料的權限狀態、這對您的業務而言至關重要。如此一來、您就能快速評估保護業務關鍵資料的能力。<block ref="20409d23480e4ebcd1abe3eb7cf44ef8" category="inline-link-rx"></block>。</block>
   <block id="1029db4aa82b2fd39d624a6eda513d6c" category="section-title">「開放權限」區域現在包括OneDrive和SharePoint帳戶</block>
   <block id="52a3db95e0c303b6251e8f60de3b3f3d" category="paragraph">勒索軟體保護儀表板中的「開放權限」區域現在包含OneDrive帳戶和SharePoint帳戶中掃描檔案的權限。</block>
   <block id="17fc50243c5a80f407e83d268bcab18e" category="section-title">2022年2月9日</block>
   <block id="67ecb98d51fb7fee47f7f4c979becfa6" category="section-title">全新勒索軟體保護服務</block>
   <block id="c05006d715a916b10a4f130817c81c90" category="paragraph">全新的勒索軟體保護服務可讓您檢視網路安全相關資訊、並評估資料對網路攻擊的恢復能力。它也提供警示與修正清單、讓您的資料更安全。</block>
   <block id="7e0c2cf881384db7bfcfb883b67871a5" category="inline-link">深入瞭解這項新服務</block>
-  <block id="f8f0d5b489ad504a83a9a25f8afd6159" category="paragraph"><block ref="64dfcbf1401a338253308f53837a8af7" category="inline-link-rx"></block>。</block>
   <block id="4f68ea88cb14fd6dc71bffac70a051ef" category="summary">使用勒索軟體保護儀表板檢視所有工作環境和資料來源的網路恢復能力總覽。您可以深入瞭解每個區域、以瞭解更多詳細資料和可能的修正。</block>
   <block id="7c539c494001ab119f307e07a91b6386" category="doc">管理資料來源的網路安全建議</block>
   <block id="48462d40111a9bc9ae905b8b4f06f513" category="inline-image-macro">勒索軟體保護儀表板的快照。</block>
@@ -132,7 +130,6 @@
   <block id="effbb336e45f46d581aeda0855b4f075" category="paragraph"><block ref="1d0e1a8a3aab3560b76f73789d114aca" category="inline-link-rx"></block>。</block>
   <block id="2f7d7abbde3d214eeb937dd5553d1875" category="admonition">勒索軟體保護服務目前是試用版產品。</block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">功能</block>
-  <block id="9c0b12d94b35d04d362f66051612faa0" category="paragraph">勒索軟體保護目前提供多項功能、可協助您保護網路儲存設備。未來將會新增其他功能。目前功能可識別下列時機：</block>
   <block id="eb7d0298b4be2c1f2642a071e6afc843" category="list-text">您工作環境中的磁碟區無法透過使用建立備份至雲端來保護<block ref="65043dfb781746b8fde5bfddb319eb97" category="inline-link-rx"></block>。</block>
   <block id="289085348f74317351108d3d869b6f14" category="list-text">您工作環境中的資料和資料來源並未使用進行掃描<block ref="4af4db8698c4a0998b2c93dbadcf8efe" category="inline-link-rx"></block> 找出法規遵循與隱私權方面的考量、並找出最佳化商機。</block>
   <block id="bf4b00555794320f943c5414853d8594" category="list-text">在工作環境或資料來源中、加密檔案的百分比出現異常增加。</block>
@@ -183,7 +180,6 @@
   <block id="3e080914efe0d0ca025439fbb68d437f" category="paragraph">支援註冊可從支援儀表板的Cloud Manager取得。</block>
   <block id="fb07bf6b7698dbe934b8b2164d915484" category="list-text">在* Resources（資源）*選項卡中，單擊* Register for Support*（註冊以獲得支持*）。</block>
   <block id="392fb0270d0d84dbc3fdf8c67da1e5ad" category="list-text">選取您要登錄的NSS認證、然後按一下「*登錄*」。</block>
-  <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">所有Cloud Manager文件</block>
   <block id="8aa5491f5b5232be0b1b2e9832e6ee88" category="sidebar">勒索軟體保護文件</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">版本資訊</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">開始使用</block>
@@ -214,10 +210,8 @@
   <block id="55a52ff3da54b1be61be4ffbf282e94a" category="section-title">全新面板可追蹤ONTAP 您的不穩定環境的安全強化。</block>
   <block id="9c7ce6244ca9eb3215d61dd69afa3325" category="inline-link">《NetApp ONTAP 資訊系統安全強化指南》</block>
   <block id="3380ed6ae32f99410860532de07b57a7" category="inline-link">介紹防勒索軟體功能ONTAP</block>
-  <block id="c0920e0c17ca7e741f375b33ea0a761b" category="paragraph">全新的「強化ONTAP 您的需求環境」面板提供ONTAP 您的支援系統中特定設定的狀態、可追蹤您的部署安全程度、並根據<block ref="060f8a2b53a60ac49c67caafaf5b129f" category="inline-link-rx"></block> 以及<block ref="0be7bd5b5f280e211653a4c6e05c11a6" category="inline-link-rx"></block> 主動偵測異常活動並提出警告。</block>
   <block id="914a5a27ea412edf84bb416054ec6d75" category="paragraph">您可以檢閱建議、然後決定如何解決潛在問題。您可以依照步驟變更叢集上的設定、將變更延後至其他時間、或忽略建議。<block ref="87553c653b94d5529a2080374ec70030" category="inline-link-rx"></block>。</block>
   <block id="76553642514a4b204c12afe14df42e92" category="section-title">新的面板可顯示如何使用Cloud Backup來保護不同類別的資料。</block>
-  <block id="c55588bedd5ed04bd522d770a0c3de70" category="paragraph">這個全新的「備份狀態」面板顯示、如果您因為勒索軟體攻擊而需要恢復、最重要的資料類別將會備份得多麼完整。此資料可視覺化呈現由Cloud Backup備份環境中特定類別的項目數量。<block ref="eddc9c9a841fbf81e5d5b5a19c7e11a3" category="inline-link-rx"></block>。</block>
   <block id="5592b65ac68ee08e7e4d72e1db4c8c57" category="cell">內建的勒索軟體並非適用於所有磁碟區</block>
   <block id="3e4cd8785a12dd4af37c0d4961022f96" category="inline-link">NetApp反勒索軟體功能</block>
   <block id="7aa34ccd4933956082a1db1a1dcb9386" category="cell">內部ONTAP 的某些Volume無法使用<block ref="c430ca7dfd9bb0dbfe1053348a62639f" category="inline-link-rx"></block> 已啟用。</block>
@@ -261,4 +255,27 @@
   <block id="c520be19d736e28ac258be212caaa6a5" category="cell"><block ref="ebf13e67cf6307ed02967adbb6711cdb" category="inline-link-rx"></block> 或<block ref="57f03f2d814ee68f8cab383ca5276240" category="inline-link-rx"></block>。</block>
   <block id="b9de0627ae5b338bc6c5d66e26fd1ebc" category="inline-link">在FSXfor ONTAP Sfor Sf系 上</block>
   <block id="3b87b8dcbc175954773151e5cdbe57d2" category="cell"><block ref="9217c403e6fe97a9a176c63ac6ba2b68" category="inline-link-rx"></block>或<block ref="a83b33f58a6c49ebc8dc0bebb61ff0e7" category="inline-link-rx"></block>或<block ref="655b9f4a8bcbab74e9e21d268c925508" category="inline-link-rx"></block>。</block>
+  <block id="f8c7ea9d64a54c9a1eb4c1cbc5ef066e" category="section-title">2022年6月12日</block>
+  <block id="ee4612ccbf2c1a0b8e01a1dc2992487f" category="section-title">NAS檔案系統稽核狀態現在會針對ONTAP 您的不完整儲存VM進行追蹤</block>
+  <block id="9e0f0ecbfec67c585b4269b113f30ee3" category="paragraph">如果工作環境中少於40%的儲存VM啟用檔案系統稽核、則會在_Cyber Resilience Map_中新增警示。您可以在「_Harden Your ONTAP Sfor enapenity_」面板中、檢視未追蹤SMB和NFS事件的確切SVM數、並將其記錄到稽核記錄檔中。然後您可以決定是否對這些SVM啟用稽核。</block>
+  <block id="9f8d82fd59d602cd8a59ae988c97d5e6" category="section-title">當您的磁碟區未啟用隨裝即用的勒索軟體時、就會顯示警示</block>
+  <block id="5e75c953b6169be120d3ab03b8f54b15" category="paragraph">此資訊已在ONTAP 「_Harden Your ONTAP Sfor the Ezenology_」面板中報告、 但現在、當開箱內的勒索軟體功能在不到40%的磁碟區中開啟時、_網路還原地圖_會報告警示、以便您在儀表板中檢視此資訊。</block>
+  <block id="cc1796d3f81dc9429436a972e383c713" category="section-title">現在ONTAP 、我們會追蹤FSX for Sfor Sfor Sfor Sfor Sfor Systems以啟用Volume快照</block>
+  <block id="e59924af0c76a1072bb2a4cb349960b8" category="paragraph">「_Harden Your ONTAP Sfor Ezh enievenienials_」面板現在提供FSX for ONTAP EzSystems上Volume的Snapshot複本狀態。如果有不到40%的磁碟區受到快照保護、您也會在_網路還原地圖_中收到警示。</block>
+  <block id="5e5a2d8b7f4ac8723d3873b0ba14916e" category="paragraph">全新的面板_Harden Your ONTAP SUREYS段 環境_提供ONTAP 您的某些支援系統設定的狀態、可追蹤您的部署安全程度、並根據<block ref="060f8a2b53a60ac49c67caafaf5b129f" category="inline-link-rx"></block> 以及<block ref="0be7bd5b5f280e211653a4c6e05c11a6" category="inline-link-rx"></block> 主動偵測異常活動並提出警告。</block>
+  <block id="ed35eae63358acfc6c38aefc0b7736d0" category="paragraph">這個全新的「備份狀態」面板顯示、如果您因為勒索軟體攻擊而需要恢復、最重要的資料類別將會備份得多麼完整。此資料可視覺化呈現由Cloud Backup備份環境中特定類別的項目數量。<block ref="eddc9c9a841fbf81e5d5b5a19c7e11a3" category="inline-link-rx"></block>。</block>
+  <block id="f0affd41380a1f75f1e8cb0eb63a3746" category="paragraph">新的「業務關鍵資料權限分析」面板會顯示資料的權限狀態、這對您的業務而言至關重要。如此一來、您就能快速評估保護業務關鍵資料的能力。<block ref="20409d23480e4ebcd1abe3eb7cf44ef8" category="inline-link-rx"></block>。</block>
+  <block id="07af92e755dcb6b8c74060d22fcc7077" category="paragraph"><block ref="12a8d1a9d44e422c8f9c04ab83945381" category="inline-link-macro-rx"></block>。</block>
+  <block id="2b7793f2050536702cffe75f1afedd67" category="paragraph">使用Cloud Manager勒索軟體保護儀表板、檢視所有工作環境和資料來源的網路恢復能力總覽。您可以深入瞭解每個區域、以瞭解更多詳細資料和可能的修正。</block>
+  <block id="c4839802587ac50cbe60ffdc49b98465" category="cell">並非所有SVM都會開啟檔案作業稽核功能</block>
+  <block id="112dc676159587048198f85964d6516d" category="cell">工作環境中的部分儲存VM未啟用檔案系統稽核。建議您追蹤使用者對您檔案的行動。</block>
+  <block id="2a616a7e873712e5b6e2b2ace9afd42d" category="cell">按一下連結、即可將您重新導向至 <block ref="e60df9b32c12ff1b69061e150f46f08e" category="inline-xref-macro-rx"></block> 以及問題所在的工作環境。您可以在此調查是否需要在SVM上啟用NAS稽核。</block>
+  <block id="e4a37f02d326b41feca29ff24384dfc1" category="cell">NAS稽核</block>
+  <block id="26644e590b6e93e56b7eb402dd7184d7" category="cell">已啟用檔案系統稽核的儲存VM數目。綠色狀態圖示表示超過85%的SVM已啟用NAS檔案系統稽核。黃色表示啟用40-85%。紅色表示啟用&lt; 40%。</block>
+  <block id="c6310b0082711c2ecff8665c858d4349" category="inline-link">瞭解如何在SVM上啟用NAS稽核</block>
+  <block id="4f1efe1bb089b60d7f12a798fbc657ac" category="cell"><block ref="5008c18083c6348e863173af351120f7" category="inline-link-rx"></block> 使用CLI。</block>
+  <block id="d79e9c50c54d2d70bdf5777d13357ae9" category="paragraph">勒索軟體保護功能提供單一可見度和控管能力、可管理及改善各種工作環境和基礎架構層級的資料安全性、以便在發生威脅時更有效地回應威脅。它目前提供多項功能、可協助您保護網路儲存設備。未來將會新增其他功能。目前功能可識別下列時機：</block>
+  <block id="51b8087986092c90540ce07ff9731763" category="list-text">您的無法在您的不支援的系統上啟用NAS檔案系統稽核ONTAP 。</block>
+  <block id="1f7c786e95d48949eb75e0f100710129" category="paragraph">啟用CIFS稽核會為系統管理員產生稽核事件、以追蹤資料夾權限變更、嘗試讀取或寫入檔案失敗、以及檔案建立、修改或刪除的資訊。</block>
+  <block id="23d8e653f2d8934c45e811223bcdf92b" category="sidebar">檢視ONTAP 您的不受勒索軟體保護的不安全程度</block>
 </blocks>

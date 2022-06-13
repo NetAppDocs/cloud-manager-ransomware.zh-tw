@@ -18,13 +18,35 @@ summary: 瞭解勒索軟體保護的新功能。
 
 
 
+== 2022年6月12日
+
+
+
+=== NAS檔案系統稽核狀態現在會針對ONTAP 您的不完整儲存VM進行追蹤
+
+如果工作環境中少於40%的儲存VM啟用檔案系統稽核、則會在_Cyber Resilience Map_中新增警示。您可以在「_Harden Your ONTAP Sfor enapenity_」面板中、檢視未追蹤SMB和NFS事件的確切SVM數、並將其記錄到稽核記錄檔中。然後您可以決定是否對這些SVM啟用稽核。
+
+
+
+=== 當您的磁碟區未啟用隨裝即用的勒索軟體時、就會顯示警示
+
+此資訊已在ONTAP 「_Harden Your ONTAP Sfor the Ezenology_」面板中報告、 但現在、當開箱內的勒索軟體功能在不到40%的磁碟區中開啟時、_網路還原地圖_會報告警示、以便您在儀表板中檢視此資訊。
+
+
+
+=== 現在ONTAP 、我們會追蹤FSX for Sfor Sfor Sfor Sfor Sfor Systems以啟用Volume快照
+
+「_Harden Your ONTAP Sfor Ezh enievenienials_」面板現在提供FSX for ONTAP EzSystems上Volume的Snapshot複本狀態。如果有不到40%的磁碟區受到快照保護、您也會在_網路還原地圖_中收到警示。
+
+
+
 == 2022年5月11日
 
 
 
 === 全新面板可追蹤ONTAP 您的不穩定環境的安全強化。
 
-全新的「強化ONTAP 您的需求環境」面板提供ONTAP 您的支援系統中特定設定的狀態、可追蹤您的部署安全程度、並根據 https://www.netapp.com/pdf.html?item=/media/10674-tr4569.pdf["《NetApp ONTAP 資訊系統安全強化指南》"^] 以及 https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["介紹防勒索軟體功能ONTAP"^] 主動偵測異常活動並提出警告。
+全新的面板_Harden Your ONTAP SUREYS段 環境_提供ONTAP 您的某些支援系統設定的狀態、可追蹤您的部署安全程度、並根據 https://www.netapp.com/pdf.html?item=/media/10674-tr4569.pdf["《NetApp ONTAP 資訊系統安全強化指南》"^] 以及 https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["介紹防勒索軟體功能ONTAP"^] 主動偵測異常活動並提出警告。
 
 您可以檢閱建議、然後決定如何解決潛在問題。您可以依照步驟變更叢集上的設定、將變更延後至其他時間、或忽略建議。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#status-of-ontap-systems-hardening["如需詳細資料、請前往此處"]。
 
@@ -60,4 +82,4 @@ summary: 瞭解勒索軟體保護的新功能。
 
 全新的勒索軟體保護服務可讓您檢視網路安全相關資訊、並評估資料對網路攻擊的恢復能力。它也提供警示與修正清單、讓您的資料更安全。
 
-https://docs.netapp.com/us-en/cloud-manager-ransomware/concept-ransomware-protection.html["深入瞭解這項新服務"]。
+link:concept-ransomware-protection.html["深入瞭解這項新服務"]。

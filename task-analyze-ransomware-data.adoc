@@ -14,7 +14,7 @@ summary: 使用勒索軟體保護儀表板檢視所有工作環境和資料來�
 
 
 [role="lead"]
-使用勒索軟體保護儀表板檢視所有工作環境和資料來源的網路恢復能力總覽。您可以深入瞭解每個區域、以瞭解更多詳細資料和可能的修正。
+使用Cloud Manager勒索軟體保護儀表板、檢視所有工作環境和資料來源的網路恢復能力總覽。您可以深入瞭解每個區域、以瞭解更多詳細資料和可能的修正。
 
 image:screenshot_ransomware_dashboard.png["勒索軟體保護儀表板的快照。"]
 
@@ -59,6 +59,9 @@ image:screenshot_ransomware_cyber_map.png["勒索軟體保護儀表板上的網�
 
 
 | 未針對所有磁碟區設定快照 | 工作環境中的部分磁碟區無法透過建立磁碟區快照來保護。 | 按一下連結、即可將您重新導向至 <<Status of ONTAP systems hardening,強化ONTAP 您的「需求環境」面板>> 以及問題所在的工作環境。您可以在這裡調查解決問題的最佳方式。 
+
+
+| 並非所有SVM都會開啟檔案作業稽核功能 | 工作環境中的部分儲存VM未啟用檔案系統稽核。建議您追蹤使用者對您檔案的行動。 | 按一下連結、即可將您重新導向至 <<Status of ONTAP systems hardening,強化ONTAP 您的「需求環境」面板>> 以及問題所在的工作環境。您可以在此調查是否需要在SVM上啟用NAS稽核。 
 |===
 
 
@@ -135,6 +138,9 @@ image:screenshot_ransomware_harden_ontap.png["勒索軟體保護儀表板上有�
 
 
 | 不勒索軟體ONTAP | 啟動內建勒索軟體的磁碟區百分比。僅對內部ONTAP 的供應系統有效。綠色狀態圖示表示已啟用超過85%的磁碟區。黃色表示啟用40-85%。紅色表示啟用< 40%。 | https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html#system-manager-procedure["瞭解如何在磁碟區上啟用反勒索軟體"^] 使用System Manager。 
+
+
+| NAS稽核 | 已啟用檔案系統稽核的儲存VM數目。綠色狀態圖示表示超過85%的SVM已啟用NAS檔案系統稽核。黃色表示啟用40-85%。紅色表示啟用< 40%。 | https://docs.netapp.com/us-en/ontap/nas-audit/auditing-events-concept.html["瞭解如何在SVM上啟用NAS稽核"^] 使用CLI。 
 
 
 | 版本ONTAP | 叢集上安裝的更新版本。ONTAP綠色狀態圖示表示版本為最新版本。黃色圖示表示叢集落後1或2個內部部署系統的修補版本或1個次要版本、Cloud Volumes ONTAP 或落後1個主要版本的更新版本。紅色圖示表示叢集落後3個修補程式版本、2個次要版本、或1個主要版本的內部部署系統、或2個主要Cloud Volumes ONTAP 版本的內部更新。 | https://docs.netapp.com/us-en/ontap/setup-upgrade/index.html["瞭解升級內部叢集的最佳方法"^] 或 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["您的系統Cloud Volumes ONTAP"^]。 
